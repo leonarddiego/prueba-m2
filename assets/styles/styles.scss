@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+@media (max-width:576px){
+    body{
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'header'
+            'navbar'
+            'main'
+            'footer';
+            grid-template-rows: 1fr 1fr auto 1fr;
+            grid-template-columns: auto;
+        }
+
+        .header{
+            grid-area: header;
+            background-color: rgb(0,87,156);
+            color: black;
+            font-weight:400;
+            font-size:medium;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            width: auto;
+        }
+        .navbar{
+            grid-area: navbar;
+            background-color: rgb(226,226,226);
+            color: black;
+            font-weight: light;
+            font-size:medium;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: auto;
+        }
+
+        .boton{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: rgb(148, 148, 148) 1px solid;
+            border-radius: 5px;
+            padding: 3px;
+            width: 95%;   
+        }
+
+
+        .main{
+            grid-area: main;
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+
+
+        .footer{
+            grid-area: footer;
+            background-color:rgb(1,47,107);
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 0px 15px 0px;
+            width: 100%;
+        }
+
+        .menu img{
+            width: 25px;
+            height: 25px;
+            background-color:rgb(0,87,156);
+        }
+
+        .flecha img{
+            width: 28px;
+            height: 28px;
+            background-color: white; 
+        }
+
+        .flange{
+            width: auto;
+            height: 340px;
+            background-color: rgb(248, 247, 247);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 12px;
+            border: rgb(148, 148, 148) 1px solid;
+            border-radius: 3px;
+        }
+        .flange img{
+            width: 100%;
+            height: 72%;
+            background-color: white;
+        }
+            
+        .descripcion{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content:center;
+            align-items: center;
+            font-weight: light;
+            font-size:medium;
+        }
+        button{
+            width: 90px;
+            height: 35px;
+            background-color: rgb(0,87,156);
+            color: white;
+            border:none;
+            border-radius: 3px;
+            font-weight: light;
+            font-size:medium;
+        }
+
+        .atras img{
+            width: 30px;
+            height: 25px;
+            background-color: white; border: rgb(148, 148, 148) 1px solid;
+            border-radius: 3px 0px 0px 3px;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .adelante img{
+            width: 30px;
+            height: 25px;
+            background-color: white;
+            border: rgb(148, 148, 148) 1px solid;
+            border-radius: 0px 3px 3px 0px;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .numero{
+            width: 30px;
+            height: 25px;
+            border: rgb(148, 148, 148) 1px solid;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .redes-sociales img{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(1,47,107);
+        }
+        .redes-sociales{
+            display: flex;
+            align-items: center;
+        }
+        .paginas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 15px;
+        }
+        .listado{
+            display: none;
+        }
+    }
+}
+
+@media (min-width:576px){
+    body{
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "header navbar"
+            "header main"
+            "footer main";
+            grid-template-columns: 1.3fr 6fr;
+        }
+
+        .header{
+            grid-area: header;
+            background-color: rgb(0,87,156);
+            color: black;
+            font-weight:400;
+            font-size:medium;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            width: auto;
+        }
+        .titulo{
+            padding: 10px;
+        }
+        .listado{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .a{
+            padding: 5px;
+        }
+        .navbar{
+            grid-area: navbar;
+            background-color: rgb(226,226,226);
+            color: black;
+            font-weight: light;
+            font-size:medium;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: auto;
+        }
+
+        .boton{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: rgb(148, 148, 148) 1px solid;
+            border-radius: 5px;
+            padding: 3px;
+            width: 95%;   
+        }
+
+
+        .main{
+            grid-area: main;
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            width: auto;
+        }
+
+
+        .footer{
+            grid-area: footer;
+            background-color:rgb(1,47,107);
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+        }
+
+        .menu img{
+            display: none;
+            width: 25px;
+            height: 25px;
+            background-color:rgb(0,87,156);
+        }
+
+        .flecha img{
+            width: 28px;
+            height: 28px;
+            background-color: white; 
+        }
+
+        .productos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: stretch;
+            
+        }
+        .flange{
+            width: 250px;
+            height: 340px;
+            background-color: rgb(248, 247, 247);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 5px;
+            border: rgb(148, 148, 148) 1px solid;
+            border-radius: 3px;
+        }
+        .flange img{
+            width: 100%;
+            height: 72%;
+            background-color: white;
+        }
+            
+        .descripcion{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content:center;
+            align-items: center;
+            font-weight: light;
+            font-size:medium;
+        }
+        button{
+            width: 90px;
+            height: 35px;
+            background-color: rgb(0,87,156);
+            color: white;
+            border:none;
+            border-radius: 3px;
+            font-weight: light;
+            font-size:medium;
+        }
+
+        .atras img{
+            width: 30px;
+            height: 25px;
+            background-color: white; border: rgb(148, 148, 148) 1px solid;
+            border-radius: 3px 0px 0px 3px;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .adelante img{
+            width: 30px;
+            height: 25px;
+            background-color: white;
+            border: rgb(148, 148, 148) 1px solid;
+            border-radius: 0px 3px 3px 0px;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .numero{
+            width: 30px;
+            height: 25px;
+            border: rgb(148, 148, 148) 1px solid;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .redes-sociales img{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(1,47,107);
+        }
+        .redes-sociales{
+            display: flex;
+            align-items: center;
+        }
+        .derechos{
+            padding: 5px;
+            text-align: center;
+            
+        }
+        .paginas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 20px;
+        }
+    }
+}
