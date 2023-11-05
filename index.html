@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Queries</title>
+    <title>Animación CSS</title>
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
     <div class="grid-container">
 
         <div class="header box">
-            <div class="titulo">Flanges</div>
+            <div class="titulo">
+                <div class="logo"><img src="./assets/img/alpha-f-circle-outline.png" alt="logo"></div>
+                <div>Flanges</div>
+            </div>
             <div class="menu"><img src="./assets/img/menu.png" alt="">
             </div>
             <div class="listado">
                 <div class="a">Inicio</div>
-                <div class="a">Catálogo</div>
+                <div class="a"><a href="#main">Catálogo</a></div>
                 <div class="a">Ofertas</div>
-                <div class="a">Contacto</div>
+                <div class="a"><a href="#footer">Contacto</a></div>
             </div>
         </div>
 
@@ -29,7 +32,7 @@
             </div>
         </div>
 
-        <div class="main box">
+        <div id="main" class="main box">
             <div class="productos">
                 <div class="flange">
                     <img src="./assets/img/Flange-Slip-On.jpg" alt="">
@@ -98,10 +101,10 @@
             </div>
         </div>   
 
-        <div class="footer box">
+        <div id="footer" class="footer box">
             <div class="redes-sociales">
-                <div><img src="./assets/img/facebook.png" alt=""></div>
-                <div><img src="./assets/img/instagram.png" alt=""></div>
+                <div><a href="https://www.facebook.com/leonarddiego.moralescadenas/"><img src="./assets/img/facebook.png" alt="facebook"></a></div>
+                <div><a href="https://www.instagram.com/leonarddiego/tagged/?hl=es-la"><img src="./assets/img/instagram.png" alt="instagram"></a></div>
             </div>
             <div class="derechos">Todos los Derechos reservados</div>
         </div>
